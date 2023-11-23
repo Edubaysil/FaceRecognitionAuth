@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           children: [
                             Text(
-                              "FACE RECOGNITION AUTHENTICATION",
+                              "PRUEBA RECONOCIMIENTO FACIAL",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               height: 20,
                             ),
                             Text(
-                              "Demo application that uses Flutter and tensorflow to implement authentication with facial recognition",
+                              "Muestra de prueba que de autenticacion de reconocimiento facial",
                               style: TextStyle(
                                 fontSize: 16,
                               ),
@@ -137,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'LOGIN',
+                                    'INICIAR SESION',
                                     style: TextStyle(color: Color(0xFF0F0BDB)),
                                   ),
                                   SizedBox(
@@ -180,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'SIGN UP',
+                                    'REGISTRAR',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   SizedBox(
@@ -198,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               thickness: 2,
                             ),
                           ),
-                          InkWell(
+                          /*InkWell(
                             onTap: _launchURL,
                             child: Container(
                               decoration: BoxDecoration(
@@ -233,7 +233,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ],
                               ),
                             ),
-                          ),
+                          ),*/
                         ],
                       )
                     ],

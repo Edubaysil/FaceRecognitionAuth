@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
                     height: 50,
                   ),
                   Text(
-                    'Hi ' + username + '!',
+                    'Hola ' + username + '!',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
                   ),
                 ],
@@ -64,7 +64,7 @@ class Profile extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      '''If you think this project seems interesting and you want to contribute or need some help implementing it, dont hesitate and lets get in touch!''',
+                      '''Esta es una prueba tecnica, los rostros estan guardados en local''',
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.left,
                     ),

@@ -63,7 +63,7 @@ class SignUpState extends State<SignUp> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('No face detected!'),
+            content: Text('Cara no detectada'),
           );
         },
       );
@@ -198,7 +198,7 @@ class SignUpState extends State<SignUp> {
           children: [
             body,
             CameraHeader(
-              "SIGN UP",
+              "REGISTRARSE",
               onBackPressed: _onBackPressed,
             )
           ],
