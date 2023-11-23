@@ -27,7 +27,7 @@ class SignInSheet extends StatelessWidget {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('Wrong password!'),
+            content: Text('Contraseña Incorrecta!'),
           );
         },
       );
@@ -44,7 +44,7 @@ class SignInSheet extends StatelessWidget {
         children: [
           Container(
             child: Text(
-              'Welcome back, ' + user.user + '.',
+              'Confirma salida, ' + user.user + '.',
               style: TextStyle(fontSize: 20),
             ),
           ),
@@ -54,14 +54,14 @@ class SignInSheet extends StatelessWidget {
                 SizedBox(height: 10),
                 AppTextField(
                   controller: _passwordController,
-                  labelText: "Password",
+                  labelText: "Contraseña",
                   isPassword: true,
                 ),
                 SizedBox(height: 10),
                 Divider(),
                 SizedBox(height: 10),
                 AppButton(
-                  text: 'LOGIN',
+                  text: 'registrar salida',
                   onPressed: () async {
                     _signIn(context, user);
                   },

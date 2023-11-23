@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           children: [
                             Text(
-                              "PRUEBA RECONOCIMIENTO FACIAL",
+                              "Trasnportes Julia",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               height: 20,
                             ),
                             Text(
-                              "Muestra de prueba que de autenticacion de reconocimiento facial",
+                              "Prueba de autenticacion de reconocimiento facial",
                               style: TextStyle(
                                 fontSize: 16,
                               ),
@@ -138,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'INICIAR SESION',
+                                    'Registrar Ingreso',
                                     style: TextStyle(color: Color(0xFF0F0BDB)),
                                   ),
                                   SizedBox(
@@ -151,53 +151,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           SizedBox(
                             height: 10,
-                          ),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) => SignUp(),
-                                ),
-                              );
-                            },
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Color(0xFF0F0BDB),
-                                boxShadow: <BoxShadow>[
-                                  BoxShadow(
-                                    color: Colors.blue.withOpacity(0.1),
-                                    blurRadius: 1,
-                                    offset: Offset(0, 2),
-                                  ),
-                                ],
-                              ),
-                              alignment: Alignment.center,
-                              padding: EdgeInsets.symmetric(
-                                  vertical: 14, horizontal: 16),
-                              width: MediaQuery.of(context).size.width * 0.8,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'REGISTRAR',
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Icon(Icons.person_add, color: Colors.white)
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                            width: MediaQuery.of(context).size.width * 0.8,
-                            child: Divider(
-                              thickness: 2,
-                            ),
                           ),
                           InkWell(
                             onTap: () {
@@ -235,6 +188,54 @@ class _MyHomePageState extends State<MyHomePage> {
                                     width: 10,
                                   ),
                                   Icon(Icons.login, color: Color(0xFF0F0BDB))
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            child: Divider(
+                              thickness: 2,
+                            ),
+                          ),
+
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (BuildContext context) => SignUp(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Color(0xFF0F0BDB),
+                                boxShadow: <BoxShadow>[
+                                  BoxShadow(
+                                    color: Colors.blue.withOpacity(0.1),
+                                    blurRadius: 1,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                              alignment: Alignment.center,
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 14, horizontal: 16),
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Registrar en base de datos',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Icon(Icons.person_add, color: Colors.white)
                                 ],
                               ),
                             ),
