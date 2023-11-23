@@ -2,6 +2,7 @@ import 'package:face_net_authentication/constants/constants.dart';
 import 'package:face_net_authentication/locator.dart';
 import 'package:face_net_authentication/pages/db/databse_helper.dart';
 import 'package:face_net_authentication/pages/sign-in.dart';
+import 'package:face_net_authentication/pages/sign-out.dart';
 import 'package:face_net_authentication/pages/sign-up.dart';
 import 'package:face_net_authentication/services/camera.service.dart';
 import 'package:face_net_authentication/services/ml_service.dart';
@@ -196,6 +197,46 @@ class _MyHomePageState extends State<MyHomePage> {
                             width: MediaQuery.of(context).size.width * 0.8,
                             child: Divider(
                               thickness: 2,
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (BuildContext context) => SignOut(),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.greenAccent,
+                                boxShadow: <BoxShadow>[
+                                  BoxShadow(
+                                    color: Colors.blue.withOpacity(0.1),
+                                    blurRadius: 1,
+                                    offset: Offset(0, 2),
+                                  ),
+                                ],
+                              ),
+                              alignment: Alignment.center,
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 14, horizontal: 16),
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Registrar salida',
+                                    style: TextStyle(color: Color(0xFF0F0BDB)),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Icon(Icons.login, color: Color(0xFF0F0BDB))
+                                ],
+                              ),
                             ),
                           ),
                           /*InkWell(
