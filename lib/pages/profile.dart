@@ -57,21 +57,21 @@ class Profile extends StatelessWidget {
                 child: Column(
                   children: [
                     Icon(
-                      Icons.warning_amber_outlined,
-                      size: 30,
+                      Icons.access_time,
+                      size: 40,
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     Text(
-                      '''Esta es una prueba tecnica, los rostros estan guardados en local''',
+                      '''Ingreso Registrado''',
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.left,
                     ),
                     Divider(
                       height: 30,
                     ),
-                    InkWell(
+                    /*InkWell(
                       onTap: _launchURL,
                       child: Container(
                         decoration: BoxDecoration(
@@ -106,13 +106,13 @@ class Profile extends StatelessWidget {
                           ],
                         ),
                       ),
-                    ),
+                    ),*/
                   ],
                 ),
               ),
               Spacer(),
               AppButton(
-                text: "LOG OUT",
+                text: "Volver a principal",
                 onPressed: () {
                   Navigator.push(
                     context,

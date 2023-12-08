@@ -6,14 +6,14 @@ import 'package:face_net_authentication/pages/widgets/app_text_field.dart';
 import 'package:face_net_authentication/services/camera.service.dart';
 import 'package:flutter/material.dart';
 
-class SignInSheet extends StatelessWidget {
-  SignInSheet({Key? key, required this.user}) : super(key: key);
+class SignOutSheet extends StatelessWidget {
+  SignOutSheet({Key? key, required this.user}) : super(key: key);
   final User user;
 
   final _passwordController = TextEditingController();
   final _cameraService = locator<CameraService>();
 
-  Future _signIn(context, user) async {
+  Future _signOut(context, user) async {
     if (user.password == _passwordController.text) {
       Navigator.push(
           context,
@@ -63,7 +63,7 @@ class SignInSheet extends StatelessWidget {
                 AppButton(
                   text: 'registrar salida',
                   onPressed: () async {
-                    _signIn(context, user);
+                    _signOut(context, user);
                   },
                   icon: Icon(
                     Icons.login,

@@ -96,7 +96,7 @@ class SignOutState extends State<SignOut> {
     if (_faceDetectorService.faceDetected) {
       User? user = await _mlService.predict();
       var bottomSheetController = scaffoldKey.currentState!
-          .showBottomSheet((context) => signInSheet(user: user));
+          .showBottomSheet((context) => signOutSheet(user: user));
       bottomSheetController.closed.whenComplete(_reload);
     }
   }
@@ -125,7 +125,7 @@ class SignOutState extends State<SignOut> {
     );
   }
 
-  signInSheet({@required User? user}) => user == null
+  signOutSheet({@required User? user}) => user == null
       ? Container(
     width: MediaQuery.of(context).size.width,
     padding: EdgeInsets.all(20),
